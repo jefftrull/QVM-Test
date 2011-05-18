@@ -49,7 +49,6 @@ namespace boost {
     template <> q_traits<COLLADABU::Math::Quaternion>::scalar_type q_traits<COLLADABU::Math::Quaternion>::r<2>( COLLADABU::Math::Quaternion const & q ) { return q.y; }
     template <> q_traits<COLLADABU::Math::Quaternion>::scalar_type q_traits<COLLADABU::Math::Quaternion>::r<3>( COLLADABU::Math::Quaternion const & q ) { return q.z; }
 
-    // COLLADABU::Math::Matrix4 skipped.  No 
     template<> struct m_traits<COLLADABU::Math::Matrix4> {
       typedef COLLADABU::Math::Real scalar_type;
       static int const rows = 4;

@@ -1,0 +1,10 @@
+This is a small set of code intended to test the proposed Boost	QVM library, located at http://www.revergestudios.com/boost-qvm/
+QVM uses user-provided traits classes to enable it to wrap third party quaternion/vector/matrix classes and give them all a
+common interface.  For me, this seems to offer some benefits, as I find myself doing conversions between classes supplied by,
+e.g., OpenCollada (http://opencollada.org/), Ogre3D (www.ogre3d.org), Qt (http://qt.nokia.com/), and CGAL (www.cgal.org).
+
+In the current set of test code, I provide QVM traits classes for the Vector3, Quaternion, and Matrix4 classes of Ogre3D and
+OpenCollada.  This is a real use case, as Collada is a 3D scene description language which can be used to supply data to
+3D rendering libraries such as Ogre3D.  The libraries are somewhat heavyweight, but only small classes from them are used.
+
+The test program is built using CMake; directions are provided at the top of the CMakeLists.txt file.

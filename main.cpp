@@ -25,8 +25,6 @@ using boost::qvm::make;
 using boost::qvm::rotx_q;
 using boost::qvm::inverse;
 
-using namespace boost::qvm;
-
 int main(int argc, char **argv) {
   // access elements of vectors from two different libraries identically
   Ogre::Vector3 votest; votest%X = 0.1; votest%Y = 0.2; votest%Z = 0.3;
